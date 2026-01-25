@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 80vh;
   gap: 80px;
   padding: 40px;
 }
@@ -113,9 +113,46 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 80vh;
 }
 
-.footer {
-    margin-top: -30px; 
+
+@media (max-width: 768px) {
+
+  .auth-container {
+    flex-direction: column;
+    gap: 32px;
+    padding: 24px;
+    min-height: auto;
+  }
+
+  .auth-left {
+    text-align: center;
+  }
+
+  .auth-left h1 {
+    font-size: 2.6rem;
+  }
+
+  .auth-left p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    max-width: 100%;
+  }
+
+  .auth-card {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .auth-register {
+    padding: 24px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
 }
