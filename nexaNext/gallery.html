@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gallery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/galleryStyle.css">
+</head>
+<body>
+
+<div id="page-wrapper" class="page-wrapper">
+    <div id="theme-wrapper" class="theme-wrapper">
+      <button id="themeToggle" aria-label="Toggle theme"></button>
+</div>
+
+  <header class="header">
+    <div  class="logo">
+        <a href = "/index.html">NexaNext</a>
+      </div>
+    <button class="btn primary" onclick="logoutUser()">Sign Out</button>
+  </header>
+
+  <h1 style="text-align:center; margin-bottom: 24px;">Photo Gallery</h1>
+
+  <div id="gallery" class="gallery"></div>
+
+  <div style="text-align:center; margin-top: 32px;">
+    <button class="btn primary" onclick="goBack()">Back to Profile</button>
+  </div>
+
+  <div id="imageModal" class="modal">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modalImage" class="modal-image" />
+</div>
+</div>
+
+<script src="auth/auth.js"></script>
+<script>protectPage();</script>
+
+<script src="js/gallery.js"></script>
+<script src="js/theme.js"></script>
+</body>
+</html>

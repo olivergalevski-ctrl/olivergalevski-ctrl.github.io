@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="auth.css" />
+</head>
+<body>
+    <div id="page-wrapper" class="page-wrapper">
+    <div class="theme-wrapper">
+  <button id="themeToggle" aria-label="Toggle theme"></button>
+</div>
+  <div class="auth-container">
+    <div class="auth-left">
+      <h1>NexaNext</h1>
+      <p>Connect with people and manage users easily.</p>
+    </div>
+
+    <div class="auth-right">
+      <form id="loginForm" class="auth-card">
+  <input name="email" type="email" placeholder="Email address" required />
+  <input name="password" type="password" placeholder="Password" required />
+
+  <button class="btn primary" type="submit">Log in</button>
+
+        <hr />
+
+        <a href="register.html" class="btn secondary">
+          Create new account
+        </a>
+      </form>
+    </div>
+  </div>
+  <footer id="footer" class="footer">
+      <p>© 2026 NexaNext. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+</div>
+
+  
+  <script src="auth.js"></script>
+  <script>
+  redirectIfLoggedIn();
+  handleLogin(document.getElementById("loginForm"));
+</script>
+<script src="../js/theme.js"></script>
+</body>
+</html>

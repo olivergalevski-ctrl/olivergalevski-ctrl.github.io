@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NexaNext v1.0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div id="page-wrapper" class="page-wrapper">
+    <div id="theme-wrapper" class="theme-wrapper">
+      <button id="themeToggle" aria-label="Toggle theme"></button>
+    </div>
+    <header id="header" class="header">
+      <div  class="logo">
+        <a href = "/index.html">NexaNext</a>
+      </div>
+
+      <h1 class="user-info" id="userInfo"></h1>
+
+      <button class="btn primary" onclick="logoutUser()">Sign Out</button>
+    </header>
+
+    <div id="loading">Loading users...</div>
+
+    <div id="skeleton" class="skeleton-grid"></div>
+
+    <div id="error"></div>
+
+    <div id="usersDiv" class="usersDiv"></div>
+
+    <hr />
+
+    <footer id="footer" class="footer">
+      <p>© 2026 NexaNext. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
+    </div>
+    
+    <script src="auth/auth.js"></script>
+    <script>
+    protectPage();
+    </script>
+    <script src="js/api.js"></script>
+    <script src="js/users.js"></script>
+    <script src="js/theme.js"></script>
+    
+  </body>
+</html>
