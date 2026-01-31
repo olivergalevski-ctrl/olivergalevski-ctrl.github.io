@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>User Profile</title>
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="css/profileStyle.css">
@@ -14,15 +15,26 @@
       <button id="themeToggle" aria-label="Toggle theme"></button>
 </div>
 
-  <header class="header">
-    <div class="logo">
-        <a href = "./index.html">NexaNext</a>
+  <header id="header" class="header">
+      <div  class="logo">
+        <a href = "/index.html">NexaNext</a>
       </div>
-    <button class="btn primary" onclick="logoutUser()">Sign Out</button>
-  </header>
+
+      <button class="btn primary" onclick="logoutUser()">Sign Out</button>
+    </header>
 
   <div id="profile" class="profile"></div>
 
+
+    </div>
+    
+    <footer id="footer" class="footer">
+      <p>© 2026 NexaNext. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms</a>
+      </div>
+    </footer>
 </div>
 
 <script src="auth/auth.js"></script>

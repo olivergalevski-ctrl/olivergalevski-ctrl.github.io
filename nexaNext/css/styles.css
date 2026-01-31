@@ -263,4 +263,8 @@ h6 {
     align-items: center;
     gap: 16px;
   }
+  .footer a{
+    align-items: center;
+    
+  }
 }
